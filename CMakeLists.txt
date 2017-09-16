@@ -18,3 +18,7 @@ set(Boost_INCLUDE_DIR $ENV{BOOST_INCLUDE_DIR})
 set(Boost_LIBRARY_DIR $ENV{BOOST_LIBRARY_DIR})
 
 find_package(Boost COMPONENTS system filesystem REQUIRED)
+
+include_directories(${Boost_INCLUDE_DIR})
+set (SERVER_SOURCES server_main.cpp)
+add_executable(server ${SERVER_SOURCES})
