@@ -3,12 +3,16 @@
 namespace trgen { namespace server {
 
 template<class Derived>
-class interface
+class iserver
 {
 public:
   void start_accept()
   {
     Derived::start_accept();
+  }
+private:
+  void handle_accept()
+  {
   }
 };
 

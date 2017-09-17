@@ -3,7 +3,7 @@
 
 namespace trgen { namespace server {
 
-class pimpl
+class server_impl
 {
 public:
   void start_accept()
@@ -12,14 +12,14 @@ public:
 private:
 };
 
-impl::impl()
-     :pimpl_(new pimpl())
+server::server()
+     :impl_(new server_impl())
 {
 }
 
-void impl::start_accept()
+void server::start_accept()
 {
-  pimpl_->start_accept();
+  impl_->start_accept();
 }
 
 }} 

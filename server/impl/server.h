@@ -1,22 +1,22 @@
 #ifndef SERVER_H_
 #define SERVER_H_
 
-#include "server_interface.h"
+#include "iserver.h"
 
 #include <boost/move/unique_ptr.hpp>
 
 namespace trgen { namespace server {
 
-class pimpl;
+class server_impl;
 
-class impl : public interface<impl>
+class server : public iserver<server_impl>
 {
 public:
-  impl();
+  server();
 
   void start_accept();
 private:
-  boost::movelib::unique_ptr<pimpl> pimpl_;
+  boost::movelib::unique_ptr<server_impl> impl_;
 };
 
 }}
