@@ -1,6 +1,5 @@
 #include "server/impl/server.h"
 
-
 #include "gtest/gtest.h"
 
 
