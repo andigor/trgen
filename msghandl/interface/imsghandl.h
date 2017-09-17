@@ -10,7 +10,10 @@ namespace trgen { namespace msghandl {
 class imsghandl
 {
 public:
-  virtual void request(boost::shared_ptr<imsg> msg) = 0;
+  typedef boost::shared_ptr<imsghandl> shared_ptr;
+  typedef boost::weak_ptr<imsghandl> weak_ptr;
+
+  virtual void request(shared_ptr msg) = 0;
 protected:
   virtual void process(const imsg& msg) = 0;
 };

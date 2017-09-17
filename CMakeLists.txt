@@ -30,3 +30,9 @@ set(CMAKE_CXX_STANDARD_LIBRARIES ${CMAKE_CXX_STANDARD_LIBRARIES} ${CMAKE_THREAD_
 
 add_subdirectory(server)
 
+add_subdirectory(msgsrvc)
+
+add_subdirectory(msghandl)
+
+add_subdirectory(msgs)
+
