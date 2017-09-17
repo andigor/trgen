@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 2.8)
+cmake_minimum_required(VERSION 3.9)
 
 if (NOT DEFINED ENV{BOOST_INCLUDE_DIR})
   message( FATAL_ERROR "Please set BOOST_INCLUDE_DIR." )
