@@ -1,5 +1,5 @@
-#ifndef SERVER_H_
-#define SERVER_H_
+#ifndef SERVER_INTERFACE_H_
+#define SERVER_INTERFACE_H_
 namespace trgen { namespace server {
 
 template<class Derived>
