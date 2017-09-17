@@ -25,5 +25,8 @@ enable_testing()
 find_package(GTest REQUIRED)
 include_directories(${GTEST_INCLUDE_DIRS})
 
+find_package(Threads)
+set(CMAKE_CXX_STANDARD_LIBRARIES ${CMAKE_CXX_STANDARD_LIBRARIES} ${CMAKE_THREAD_LIBS_INIT})
+
 add_subdirectory(server)
 
